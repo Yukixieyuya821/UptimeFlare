@@ -4,7 +4,7 @@ const pageConfig = {
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://github.com/Yukixieyuya821', label: 'GitHub' },
-    { link: 'https://chat.yukixieyu.cn/', label: 'Yuki ChatGPT' }
+    { link: 'https://chat.yukixieyu.cn', label: 'Yuki ChatGPT' }
   ],
 }
 
@@ -24,7 +24,7 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://github.com/Yukixieyuya821',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      // tooltip: 'This is a tooltip for this monitor',
+      tooltip: 'This is a tooltip for my github',
       // // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       // statusPageLink: 'https://github.com/Yukixieyuya821',
       // // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -49,7 +49,7 @@ const workerConfig = {
       name: 'Yuki ChatGPT',
       method: 'GET',
       target: 'https://chat.yukixieyu.cn',
-      tooltip: 'GPT',
+      tooltip: 'GPT'
     }
     // // Example TCP Monitor
     // {
@@ -64,20 +64,20 @@ const workerConfig = {
     //   timeout: 5000,
     // },
   ],
-  notification: {
-    // [Optional] apprise API server URL
-    // if not specified, no notification will be sent
-    appriseApiServer: "https://apprise.example.com/notify",
-    // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
-    // if not specified, no notification will be sent
-    recipientUrl: "tgram://bottoken/ChatID",
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: "Asia/Shanghai",
-    // [Optional] grace period in minutes before sending a notification
-    // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-    // if not specified, notification will be sent immediately
-    gracePeriod: 5,
-  },
+  // notification: {
+  //   // [Optional] apprise API server URL
+  //   // if not specified, no notification will be sent
+  //   appriseApiServer: "https://apprise.example.com/notify",
+  //   // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
+  //   // if not specified, no notification will be sent
+  //   recipientUrl: "tgram://bottoken/ChatID",
+  //   // [Optional] timezone used in notification messages, default to "Etc/GMT"
+  //   timeZone: "Asia/Shanghai",
+  //   // [Optional] grace period in minutes before sending a notification
+  //   // notification will be sent only if the monitor is down for N continuous checks after the initial failure
+  //   // if not specified, notification will be sent immediately
+  //   gracePeriod: 5,
+  // },
   callbacks: {
     onStatusChange: async (
       env: any,
